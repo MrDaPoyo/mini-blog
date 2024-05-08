@@ -1,17 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
+
 
 {% block content %}
-<div class="p-5 text-center bg-image rounded-3" style="
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-    background-repeat:round;
+<div class="p-5 text-center bg-image bg-dark" style="
+    /* background-image: url('https://e7.pngegg.com/pngimages/348/365/png-clipart-pattern-classical-pattern-brown-floral-textile-geometric-pattern-thumbnail.png');*/
     height: 100vh;
   ">
-  <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.6);">
-    <div class="d-flex justify-content-center align-items-center h-100">
+  <div class="mask h-100 pattern-dots-lg text-danger" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100 text-white">
       <div class="text-white">
         <h1 class="mb-3">QWERTY JOURNALS</h1>
         <h4 class="mb-3">Micro blogging made easy. :D</h4>
+        <div class="justify-content-evenly">
+            <button class="btn btn-outline-light inline">Log in</button>
+            <button class="btn btn-outline-light inline">Sign Up</button>
+        </div>
       </div>
+      
     </div>
   </div>
 </div>
