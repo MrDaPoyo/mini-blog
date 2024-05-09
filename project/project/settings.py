@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-q@kbi)mvpw(^x!$0!8k!y0dsn0opy_y=z=8mj$d!v0+cqk-ga%
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS=["http://localhost:8080", "http://127.0.0.1:8000", "https://8000-mrdapoyo-miniblog-fjma2buekkn.ws-eu111.gitpod.io"]
 
 # Application definition
 
