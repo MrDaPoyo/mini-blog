@@ -5,4 +5,7 @@ from .models import *
 # Create your views here.
 def home(request):
     Post = post.objects.all()
-    return render(request, "index.html", Post)
+    context = {
+        "post":Post
+    }
+    return render(request, "index.html", context)
