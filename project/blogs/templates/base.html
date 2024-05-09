@@ -6,13 +6,33 @@
 <style>
 
     .separator {
-        background-color: #bfb35a;
-        color: #88a65e;
+        background: linear-gradient(
+        white 3px,
+        blue 3px,
+        transparent 3px,
+        transparent 9px
+        );
+        background-size: 100% 9px;
+        animation: pan-overlay 22s infinite linear;
+        width:1%;
+        height: 99,5%;
+        z-index: 2;
     } 
 
     .overflow-hidden {
         overflow: hidden;
     }
+
+    @keyframes pan-overlay {
+        from {
+            background-position:0% 0%;
+        }
+        to {
+            background-position:0% -100%;
+        }
+    }
+
+    
 </style>
 
 
